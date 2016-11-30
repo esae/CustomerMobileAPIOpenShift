@@ -39,7 +39,7 @@ public class CustomerEndpoint {
 
     @PUT
     @Consumes({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
-    public void edit(@PathParam("id") Long id, Customer entity) {
+    public void edit(Customer entity) {
         customerEJB.updateCustomer(entity);
     }
 
