@@ -25,7 +25,7 @@ import javax.ws.rs.core.MediaType;
  * @author andreas.martin
  */
 @Stateless
-@Path("api/v1/customer")
+@Path("v1/customer")
 public class CustomerEndpoint {
 
     @EJB

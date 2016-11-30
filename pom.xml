@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>api</groupId>
-    <artifactId>api</artifactId>
+    <artifactId>CustomerMobileAPI</artifactId>
     <packaging>war</packaging>
     <version>1.0</version>
     <name>CustomerMobileAPI</name>
@@ -59,11 +59,4 @@
       </build>
     </profile>
   </profiles>
-    <repositories>
-        <repository>
-            <id>unknown-jars-temp-repo</id>
-            <name>A temporary repository created by NetBeans for libraries and jars it could not identify. Please replace the dependencies in this repository with correct ones and delete this repository.</name>
-            <url>file:${project.basedir}/lib</url>
-        </repository>
-    </repositories>
 </project>
