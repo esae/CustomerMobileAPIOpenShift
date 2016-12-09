@@ -22,12 +22,11 @@ public class CORSFilter implements ContainerResponseFilter{
     public void filter(ContainerRequestContext requestContext, ContainerResponseContext responseContext) throws IOException {
         responseContext.getHeaders().add("Access-Control-Allow-Origin", "*");
         responseContext.getHeaders().add("Access-Control-Allow-Methods", "GET, PUT, POST, DELETE");
-        String requesteader = requestContext.getHeaderString("Access-Control-Request-Headers");
-        if (requesteader != null && !"".equals(requesteader)) {
-            responseContext.getHeaders().putSingle("Access-Control-Allow-Headers", requesteader);
+        String requestheader = requestContext.getHeaderString("Access-Control-Request-Headers");
+        if (requestheader != null && !"".equals(requestheader)) {
+            responseContext.getHeaders().putSingle("Access-Control-Allow-Headers", requestheader);
         }
         responseContext.getHeaders().add("Access-Control-Max-Age", "86400");
     }
-
 }
     
